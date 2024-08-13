@@ -1,0 +1,53 @@
+.lists {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    gap: 1rem;
+    border: var(--default-border);
+    background-color: var(--list-bg-color);
+    border-radius: 0.75rem;    
+    transition: border 0.5s, opacity 0.5s;
+}
+
+.list:hover {
+    border-color: var(--button-color);
+}
+
+.list input[type="text"] {
+    width: 100%;
+    transition: border 0.5s;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.list input[type="text"]:focus {
+    border-color: var(--indigo);
+}
+
+.list button {
+    display: flex;
+    align-items: center;
+}
+
+.list button svg path{
+    fill: var(--indigo);
+    transition: all 0.5s;
+}
+
+
+.list.complete {
+    opacity: 50%;
+}
+
+.list.complete input {
+    text-decoration: line-through;
+}
