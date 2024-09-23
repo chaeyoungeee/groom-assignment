@@ -1,0 +1,41 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+#spreadsheet-container {
+    border: 1px solid rgb(237, 237, 237);
+    width: fit-content;
+}
+
+.uneditable {
+    background-color: rgb(241, 241, 241);
+    text-align: center;
+}
+
+.selected {
+    background-color: rgb(124, 192, 219);
+    color: white;
+}
+
+.spreadsheet-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.cell {
+    font-size: .75em;
+    width: 6em;
+    padding: .5rem .25rem .5rem .25rem;
+    border: 1px solid rgb(233, 233, 233);
+
+    transition: all .3s;
+}
+
+.cell:focus {
+    outline: none;
+}
+
+.cell-status {
+    font-size: .8em;
+    margin: .5em 0;
+}

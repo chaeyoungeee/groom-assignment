@@ -1,0 +1,17 @@
+#export-btn {
+    border: none;
+
+    padding: .65em;
+
+    font-size: .75em;
+
+    color: white;
+    background-color: rgb(44, 156, 110);
+
+    transition: all .3s;
+}
+
+#export-btn:hover {
+    background-color: rgb(24, 131, 108);
+    cursor: pointer;
+}
