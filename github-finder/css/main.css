@@ -1,0 +1,17 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .box {
+    width: calc(var(--width) - 2em);
+    max-width: calc(100vw - 4em);
+    margin-left: 1em;
+    margin-right: 1em;
+    padding: 1em;
+}
+
+.invisible{
+    display: none !important; 
+}

@@ -1,0 +1,28 @@
+header {
+    height: 2em;
+    background-color: var(--blue);
+    padding: .5em 1em .5em 1em;
+
+    display: flex;
+    justify-content: center;
+}
+
+header div {
+    height: 100%;
+    width: var(--width);
+
+    display: flex;
+    align-items: center;
+    gap: .75em;
+}
+
+header div img {
+    max-height: 100%;
+    filter: invert(100%)
+}
+
+header div p {
+    font-weight: 550;
+    font-size: 1.1em;
+    color: var(--white);
+}

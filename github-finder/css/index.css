@@ -1,0 +1,61 @@
+:root {
+    --black: #343a40;
+    --blue: #4582ec;
+    --grey: #adb6bd;
+    --green: #01b875;
+    --cyan: #19a2b8;
+    --white: white;
+    --footer-color: #f8f9fa;
+    --border-color: #e4e4e4;
+    --description-color: #9da4aa;
+    --skyblue: #ebf0fa;
+
+    --width: 1000px;
+}
+
+html, body {
+    min-height: 100vh;
+}
+
+body {
+    margin: 0;
+    color: var(--black);
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif !important;
+}
+
+.wrap {
+    min-height: calc(100vh - 4.5em);
+    padding-bottom: .5em;
+    height: 100%;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.box, input[type='text'], button {
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+}
+
+button {
+    border: none;
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+input[type='text'] {
+    padding: .5em 1em .5em 1em;
+    font-size: .75em;
+}

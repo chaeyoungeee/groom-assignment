@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Github Finder
+        </title>
+        <meta charset="utf-8">
+        <link rel="icon" href="./img/logo.png">
+        <link rel="stylesheet" type="text/css" href="./css/index.css">
+        <link rel="stylesheet" type="text/css" href="./css/header.css">
+        <link rel="stylesheet" type="text/css" href="./css/main.css">
+        <link rel="stylesheet" type="text/css" href="./css/profile.css">
+        <link rel="stylesheet" type="text/css" href="./css/search-bar.css">
+        <link rel="stylesheet" type="text/css" href="./css/tag.css">
+        <link rel="stylesheet" type="text/css" href="./css/repos.css">
+        <link rel="stylesheet" type="text/css" href="./css/footer.css">
+        <script type="module", src="./script.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="wrap">
+            <header>
+                <div>
+                    <p>
+                        GitHub Finder
+                    </p>
+                </div>
+            </header>
+
+            <main>
+                <div class="search-bar box">
+                    <p class="search-bar-title">
+                        Search GitHub Users
+                    </p>
+                    <p class="search-bar-description">
+                        Enter a username to fetch a user profile and repos
+                    </p>
+                    <div class="search-bar-section">
+                        <input id="searchUserInput" type="text">
+                        <ul id="searchResults" class="search-result-list invisible">
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="profile" class="profile box invisible">
+                    <div class="profile-image-div">
+                        <img class="profile-image" id="profileImage" alt="profile-image" src="./img/logo.png">
+                        <button class="view-profile-btn" id="viewProfileBtn">View Profile</button>
+                    </div>
+
+                    <div class="profile-description">
+                        <ul class="tags">
+                            <li><button class="tag" id="publicReposBtn"></button></li>
+                            <li><button class="tag" id="publicGistsBtn"></button></li>
+                            <li><button class="tag" id="followersBtn"></button></li>
+                            <li><button class="tag" id="followingBtn"></button></li>
+                        </ul>
+                        <ul class="descriptions">
+                            <li id="company"></li>
+                            <li id="blog"></li>
+                            <li id="location"></li>
+                            <li id="createdAt"></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <p id="repos-title" class="repos-title invisible">
+                    Lastest Repos
+                </p>
+
+                <ul id="repos" class="repos">
+                </ul>
+            </main>
+        </div>
+    </body>
+</html>

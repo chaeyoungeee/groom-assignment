@@ -1,0 +1,33 @@
+.tags {
+    display: flex;
+    flex-direction: row;
+    gap: 0.25em;
+    justify-content: start;
+}
+
+.tag {
+    font-size: .7em;
+    padding: .5em 1em .5em 1em;
+
+    transition: all 0.5s;
+}
+
+.tag:hover {
+    opacity: 50%;
+}
+
+.tags :nth-child(4n + 1) .tag {
+    background-color: var(--blue);
+}
+
+.tags :nth-child(4n + 2) .tag {
+    background-color: var(--grey);
+}
+
+.tags :nth-child(4n + 3) .tag {
+    background-color: var(--green);
+}
+
+.tags :nth-child(4n) .tag {
+    background-color: var(--cyan);
+}

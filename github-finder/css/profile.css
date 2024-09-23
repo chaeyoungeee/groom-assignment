@@ -1,0 +1,56 @@
+.profile {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.profile-image-div {
+    display: flex;
+    flex-direction: column;
+    width: 11em;
+}
+
+.view-profile-btn {
+    margin-top: 0.5em;
+    padding: 0.75em;
+    font-size: 0.75em;
+}
+
+.view-profile-btn, .profile-image {
+    transition: all 0.5s;
+}
+
+.view-profile-btn:hover, .profile-image:hover {
+    opacity: 50%;
+    cursor: pointer;
+}
+
+
+.profile-description {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1em;
+}
+
+.descriptions {
+    display: grid;
+}
+
+.descriptions li {
+    border: 1px solid var(--border-color);
+    border-bottom: none;
+
+    font-size: .9em;
+
+    padding: .5em 1em .5em 1em;
+}
+
+.descriptions li:first-child {
+    border-radius: .25em .25em 0em 0em;
+}
+
+.descriptions li:last-child {
+    border-bottom: 1px solid var(--border-color);
+    border-radius: 0em 0em .25em .25em;
+}

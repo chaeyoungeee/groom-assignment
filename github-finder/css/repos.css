@@ -1,0 +1,35 @@
+.repos-title {
+    font-size: 1.5em;
+    font-weight: bold;
+
+    margin: 1rem;
+    width: var(--width);
+    max-width: calc(100vw - 2rem);
+}
+
+.repos {
+    width: auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.repo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    transition: background-color 0.5s;
+}
+
+.repo:hover {
+    background-color: var(--skyblue);
+    cursor: pointer;
+}
+
+.repo-title {
+    color: var(--blue);
+    font-size: 0.9em;
+}
