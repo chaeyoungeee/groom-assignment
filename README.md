@@ -1,10 +1,10 @@
 ## ☁️ Groom Assignment
 
-### 01. Netflix mainpage
+### 01. Netflix Mainpage
 ![screencapture-127-0-0-1-5500-index-html-2024-08-13-22_30_54](https://github.com/user-attachments/assets/68af3c89-3cfa-4325-8d78-89119c1a22fe)
 
 
-### 02. Todo app
+### 02. Todo App
 ![screencapture-127-0-0-1-5500-index-html-2024-08-13-22_31_54](https://github.com/user-attachments/assets/8f795bfb-d286-4aae-a429-cd43c99f0f17)
 
 ### 03. Github Finder
@@ -13,6 +13,6 @@
 ### 04. Spread Sheet
 <img width="1668" alt="image" src="https://github.com/user-attachments/assets/a008354e-82ea-40ad-9311-58c66c4f959b">
 
-### 05. CRUD APP
+### 05. CRUD App
 <img width="1659" alt="image" src="https://github.com/user-attachments/assets/868380a5-d5d6-47da-a8b0-ddb054a4c8a2">
 
