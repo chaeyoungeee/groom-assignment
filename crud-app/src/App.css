@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+:root {
+  --primaryColor: #f15025;
+  --white: #fff;
+  --black: #222;
+  --grey: #262626;
+  --red: #d00e0e;
+  --green: #0e9012;
+  --lightblue: #323c45;
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--grey);
+  color: var(--black);
+  font-family: -apple-system, BlinkMacSystemFont !important;
+}
+h1 {
+  font-weight: 400;
+  text-align: center;
+  text-transform: capitalize;
+  margin: 2rem 0;
+  color: var(--white);
+}
+.App {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 90%;
+  background: var(--white);
+  padding-bottom: 2rem;
+  border-radius: 2px;
+}
+.form-center {
+  display: flex;
+}
+.form-group {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  flex: 0 0 50%;
+}
+label {
+  display: block;
+  color:rgb(131, 175, 200);
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+
+form {
+  margin: 40px;
+}
+
+.form-control {
+  background-color: transparent;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  width: 100%;
+  font-size: 16px;
+  margin-top: 10px;
+  padding: 10px;
+}
+.btn {
+  width: 100%;
+  text-decoration: none;
+  color: var(--white);
+  background-color: var(--lightblue);
+  text-align: center;
+  font-size: 14px;
+  outline: 0;
+  border: none;
+  border-radius: 2px;
+  height: 36px;
+  padding: 0 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.list {
+  margin: 3rem 0.75rem;
+  list-style-type: none;
+  border: none;
+  padding: 0;
+}
+.item {
+  background-color: var(--white);
+  padding: 10px 20px;
+  margin: .5rem 1.8rem; 
+  border: 1px solid #e0e0e0;
+  display: flex;
+  justify-content: space-between;
+}
+.info {
+  flex: 0 0 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.expense {
+  margin-right: 2rem;
+  text-transform: capitalize;
+}
+.amount {
+  font-weight: 300;
+  font-size: 1rem;
+  border-radius: 2px;
+  padding: 1px 3px;
+}
+.clear-btn,
+.edit-btn {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  outline: none;
+  cursor: pointer;
+}
+.clear-btn {
+  color: var(--red);
+}
+.edit-btn {
+  color: var(--green);
+}
+.total {
+  font-weight: 300;
+  border-radius: 2px;
+  padding: 2px 5px;
+}
+.alert {
+  padding: 0.75rem 1.25rem;
+  color: var(--white);
+  text-align: center;
+  text-transform: capitalize;
+  width: 80%;
+  margin: 2rem auto 0 auto;
+  border-radius: 2px;
+  text-transform: capitalize;
+}
+.alert-danger {
+  background: var(--red);
+}
+.alert-success {
+  background: var(--green);
+}
+.alert-edit {
+  background-color:rgb(237, 202, 87);
+}
+.remove-btn {
+  background: none;
+  color: var(--grey);
+}
