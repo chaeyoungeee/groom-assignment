@@ -1,0 +1,28 @@
+.banner {
+  color: black;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.banner-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.banner__button {
+  font-size: 1rem;
+  width: 8rem;
+  height: 60px;
+  text-align: center;
+  border: 0;
+  background-color: white;
+}
+
+.banner__button--selected {
+  font-weight: 600;
+  border-bottom: 2px solid black;
+}
