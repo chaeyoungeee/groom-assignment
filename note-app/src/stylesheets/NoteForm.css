@@ -1,0 +1,80 @@
+.note-form {
+    width: 50%;
+    height: 70%;
+
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+
+#form-type, #form-title, #form-content, #form-submit {
+    grid-column: span 3;
+}
+
+.close-btn {
+    position: absolute;
+    right: 2.25rem;
+    top: 2.25rem;
+    font-size: 1.75em;
+    transform: translate(50%, -50%);
+
+    cursor: pointer;
+    fill: var(--light-gray);
+
+    transition: all .5s;
+}
+
+.close-btn:hover {
+    font-size: 2.25em;
+    transform: translate(50%, -50%) rotate(180deg);
+    fill: grey;
+}
+
+#form-title, #form-content {
+    font-size: .9em;
+    padding: .5em 1em .5em 1em;
+}
+
+#form-content {
+    flex: 1;
+    vertical-align: top;
+    overflow: auto;
+    resize: none;
+}
+
+.note-form select, .note-form button {
+    font-size: .8em;
+    padding: .5em 1em .5em 1em;
+    font-weight: 500;
+}
+
+.note-form select {
+    padding: .5em;
+    margin-left: .5em;
+}
+
+.note-form button:hover {
+    font-weight: 700;
+}
+
+.note-set-type {
+    font-size: .8em;
+    font-weight: 500;
+}
+
+.form-settings {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.note-form .tag {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .25em;
+}
+
+.delete-tag-btn {
+    fill: gray;
+}

@@ -1,0 +1,41 @@
+.App {
+    display: grid;
+    grid-template-columns: var(--side-bar-width) auto;
+    grid-template-rows: 100vh;
+    height: 100%;
+    background-color: ghostwhite;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif !important;
+}
+
+.round-border {
+    border-radius: 1em;
+    border: 1px solid gainsboro;
+}
+
+.half-round-border {
+    border-radius: .5em;
+    border: 1px solid gainsboro;
+}
+
+.spring-on-hover {
+    transition: all .5s;
+}
+
+.spring-on-hover:hover {
+    transform: translate(-.25em, -.25em);
+    box-shadow: .25em .25em gainsboro;
+}
+
+*::-webkit-scrollbar {
+    width: 6px;
+}
+
+*::-webkit-scrollbar-track {
+    background-color: gainsboro;
+    border-radius: 3px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 3px;
+}

@@ -1,0 +1,94 @@
+.tags-form {
+    width: 30%;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.tags-form > .form-title {
+    margin-left: 1.25rem;
+}
+
+.tags-form > input {
+    width: calc(100% - 2.5rem);
+    margin: 1.25rem;
+    border: none;
+    border-bottom: 2px solid gray;
+    box-sizing: border-box;
+    outline: none;
+
+    font-size: 1em;
+    font-weight: 500;;
+}
+
+.tags-form > input::placeholder {
+    color: var(--light-gray);
+}
+
+.tags-form-tags {
+    display: flex;
+    flex-direction: row;
+    max-height: 50vh;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+
+    margin: 0;
+}
+
+.tags-form-tag {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 3em;
+    gap: .5em;
+    padding: 0 1.25rem 0 1.25rem;
+
+    background-color: transparent;
+}
+
+.tags-form-tag-name {
+    flex: 1;
+    text-align: start;
+    font-size: 1rem;
+
+    transition: all .5s;
+}
+
+.tags-form-tag > .svg {
+    font-size: 1.5rem;
+    fill: var(--light-gray);
+}
+
+.tags-form-tag > .svg {
+    transition: all .5s;
+}
+
+.selected > .tags-form-tag-name {
+    font-weight: 600;
+}
+
+.unselected > .tags-form-tag-name {
+    color: var(--light-gray);
+}
+
+.tags-form-tag:hover {
+    background-color: var(--theme-color);
+}
+
+.tags-form-tag:hover > .svg {
+    transform: rotate(180deg);
+    fill: gray;
+}
+
+.unselected:hover > .tags-form-tag-name {
+    font-weight: 500;
+    color: black;
+}
+
+.all-tags > .tags-form-tag-name {
+    font-weight: 600;
+}
+
+.all-tags > .svg {
+    fill: white;
+}

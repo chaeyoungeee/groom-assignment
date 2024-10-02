@@ -1,0 +1,60 @@
+.notes-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.notes-wrapper {
+    overflow-y: scroll;
+    flex: 1
+}
+
+.notes {
+    width: calc(100% - 2em);
+
+    display: grid;
+    grid-template-columns: repeat(4, calc(25% - 0.75em));
+    gap: 1em;
+    padding: 1em;
+    margin: 0;
+}
+
+.sub-kind {
+    margin: 0 1.5em 0 1.5em;
+    font-weight: 500;
+    font-size: 1.1em;
+    color: grey;
+}
+
+.sub-kind > span {
+    font-size: 0.75em;
+}
+
+.searching-bar-container {
+    margin: 1em;
+}
+
+.searching-bar {
+    width: stretch;
+    padding: .5em 1em .5em 1em;
+    border-radius: .75em;
+    outline: none;
+}
+
+@media (width < 1540px) {
+    .notes {
+        grid-template-columns: repeat(3, calc(33.33% - 0.6666em));
+    }
+}
+
+@media (width < 1140px) {
+    .notes {
+        grid-template-columns: repeat(2, calc(50% - 0.5em));
+    }
+}
+
+@media (width < 740px) {
+    .notes {
+        grid-template-columns: repeat(1, 100%);
+    }
+}

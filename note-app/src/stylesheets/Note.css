@@ -1,0 +1,78 @@
+.note {
+    padding: 1em 1.2em 1em 1.2em;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    height: 13em;
+
+    gap: .5em;
+}
+
+.note-title {
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+.note-content {
+    font-weight: 500;
+    font-size: 0.85em;
+    flex: 1;
+    overflow-y: hidden;
+}
+
+.note-priority {
+    position: absolute;
+    right: 4em;
+    top: 1.65em;
+
+    font-weight: 500;
+    font-size: 0.7em;
+}
+
+.note-date {
+    font-size: 0.8em;
+    opacity: 50%;
+}
+
+#switch-pin-btn {
+    right: 1.5rem;
+    top: 1.75rem;
+    font-size: 1.5em;
+    transform: translate(50%, -50%);
+
+    position: absolute;
+    transition: all .5s;
+
+    cursor: pointer;
+}
+
+#switch-pin-btn .pinned{
+    fill: var(--theme-color);
+}
+
+#switch-pin-btn .unpinned{
+    fill: var(--light-gray);
+}
+
+#switch-pin-btn .unpinned:hover {
+    fill: var(--theme-color);
+}
+
+.etc-btns {
+    font-size: 1.5em;
+    position: absolute;
+    right: .5em;
+    bottom: .5em;
+    display: flex;
+}
+
+.etc-btns > .svg {
+    fill: var(--light-gray);
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.etc-btns > .svg:hover {
+    fill: grey
+}
