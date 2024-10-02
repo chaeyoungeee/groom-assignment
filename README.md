@@ -16,3 +16,5 @@
 ### 05. CRUD App
 <img width="1659" alt="image" src="https://github.com/user-attachments/assets/868380a5-d5d6-47da-a8b0-ddb054a4c8a2">
 
+### 06. Shopping Mall
+<img width="1369" alt="image" src="https://github.com/user-attachments/assets/b685a179-b27c-4cfd-ae8b-f9fd9492f219">
